@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;400;700&display=swap');
+* {
+    font-family: 'Ysabeau', 'sans-serif';
+}
+
+.header {
+    height: 20vh;
+    background-color: #F9E2E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoPerla{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 50%;
+    height: 100%;
+    margin-block: 3px;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+.centradorDerecha {
+    color: #F9E2E7;
+    width: 91px;
+    margin-right: 20px;
+}
+
+.centradorIzquierda {
+    color: #F9E2E7;
+    width: 91px;
+    margin-left: 20px;
+}
+
+.footer {
+    height: 15vh;
+    background-color: #F9E2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #848788;
+}
+
+.yo {
+    margin: 0px;
+    color: #848788;
+}
+
+.linkCart {
+    display: flex;
+    align-items: center;
+}
+
+.divCart {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.divCartNumber {
+    display: flex;
+    justify-content: space-around;
+    background-color: #969798;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.cartNumber {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: large;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.wrapper{
+    min-height: 90vh;
+}
+
+.mainHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divGrid {
+    padding-block: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 300px) ;
+    grid-template-rows: repeat(4, 280px);
+    gap: 2rem;
+    min-height: 75vh;
+}
+
+section{
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .centered-text {
+    margin: 0;
+  color: white;
+  font-family: 'Ysabeau', 'sans-serif';
+  font-size: 2.1rem;
+  }
+
+  .centered-text-big {
+    margin: 0;
+  color: white;
+  font-family: 'Ysabeau', 'sans-serif';
+  font-size: 3rem;
+  }
+
+.categoria1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url("../img/Conjuntos.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria1:hover {
+    transform: scale(1.02);
+}
+
+
+.categoria2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url("../img/Corpinios.webp");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria2:hover {
+    transform: scale(1.02);
+}
+
+
+.categoria3{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-image: url("../img/Bodys.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria3:hover {
+    transform: scale(1.02);
+}
+
+
+.categoria4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url("../img/Pijamas.webp");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria4:hover {
+    transform: scale(1.02);
+}
+
+
+.categoria5{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url("../img/Giftcards.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria5:hover {
+    transform: scale(1.02);
+}
+
+.categoria6{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url("../img/Pantuflas.webp");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria6:hover {
+    transform: scale(1.02);
+}
+
+.categoria7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-image: url("../img/Batas.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria7:hover {
+    transform: scale(1.02);
+}
+
+.categoria8{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url("../img/Hombre.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria8:hover {
+    transform: scale(1.02);
+}
+
+.categoria9{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-image: url("../img/Kids.webp");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria9:hover {
+    transform: scale(1.02);
+}
+
+.categoria10{
+    grid-column: 3/5;
+    grid-row: 3/5;
+    background-image: url("../img/Packs.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease;
+}
+
+.categoria10:hover {
+    transform: scale(1.02);
+}
+
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Ysabeau';
+}
+
+.containerTarjetas {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
+
+.tarjetas {
+    width: 215px;
+    height: 370px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgTarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.fotoTarjetas {
+    width: 100%;
+    max-height: 100%;
+}
+
+.textoTarjetas {
+    margin: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.nombreTarjetas {
+    font-weight: 500;
+    display: block;
+    color: #363636;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Ysabeau';
+    margin: 0;
+}
+
+.parteInferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.precioTarjetas {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Ysabeau';
+}
+
+.mainProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorProduct {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    min-height: 75vh;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel__button {
+    cursor: pointer;
+}
+
+.botonIzquierda {
+    margin-right: 20px;
+}
+
+.carousel__images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    width: 250px;
+}
+
+.carousel__image {
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+    width: 250px;
+}
+
+.carousel__image--active {
+    display: block;
+}
+
+.imgGiftcard {
+    width: 100%;
+}
+
+.nombre {
+    font-family: 'Ysabeau', 'sans-serif';
+    display: flex;
+    flex: 0 0 auto;
+    width: 35%; /* Ajusta el ancho del nombre según tus necesidades */
+    padding: 0 1rem; /* Ajusta el espaciado interno del nombre según tus necesidades */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-right: 3rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.informacion {
+    width: 70%;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.precioProducto {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.divColores {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.talles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divTalles {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.botonesTalles {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
+.botonesColores {
+    width: 50px;
+    height: 30px;
+    padding: 1px;
+}
+
+/* Estilos para los radios de colores */
+.input-color {
+    display: none;
+  }
+  
+  .label-color {
+    display: inline-block;
+    width: 55px;
+    padding: 1px;
+    border: 1px solid #848788;
+    background-color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .input-color:checked + .label-color {
+    border: 1px solid #fdbfcc;
+    color: #fdbfcc;
+  }
+  
+  
+
+ .divBotones {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+ } 
+
+.radio-button {
+    width: 30px;
+    display: inline-block;
+    padding: 1px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #848788;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .radio-talle:checked + label.radio-button {
+    border: 1px solid #fdbfcc;
+    color: #fdbfcc;
+  }
+  
+  .radio-talle {
+    display: none;
+  }
+
+  .btn-mi-color {
+    background-color: #F9E2E7;
+    color: black;
+    width: 200px;
+}
+
+.btn-mi-color:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    color: black;
+}
+
+.aviso {
+    color: gray;
+    font-size: small;
+}
+
+.peligroActive {
+    color: red;
+    display: block;
+}
+
+.peligroInactive {
+    display: none;
+}
+
+.mainCarrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divMainCarrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tituloCarrito {
+    margin-block: 1rem;
+}
+
+.listaCarrito {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productoCarrito {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(156, 156, 156);
+}
+
+.divCantidad {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.375rem;
+}
+
+.cantidad {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+.btn-mi-color-cantidad-izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9E2E7;
+    color: black;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.btn-mi-color-cantidad-izquierda:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    color: black;
+}
+
+.btn-mi-color-cantidad-derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9E2E7;
+    color: black;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.btn-mi-color-cantidad-derecha:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    color: black;
+}
+
+.btn-mi-danger {
+    background-color: #df5353;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-mi-danger:hover {
+    cursor: pointer;
+    background-color: #d03d3d;
+    color: white;
+}
+
+.codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.canjear {
+    background-color: #F9E2E7;
+    color: black;
+    margin-top: 20px;
+}
+
+.canjear:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    color: black;
+}
+
+.divPrice {
+    margin-block: 20px;
+}
+
+.continuar {
+    margin-bottom: 20px;
+}
+
+.formDatos {
+    width: 30%;
+}
+
+.form-label, .divFormaEnvio {
+    margin-top: 20px;
+}
+
+
+
+.divPagar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.mpButton {
+    display: none;
+}
+
+.wsp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
+
+.divFlecha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-left: 10px;
+}
+
+.botonAtras:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+    .logoPerla{
+        width: 135.9px;
+        height: 120.09px;
+        margin-left: 5px;
+    }
+
+    .divGrid{
+        width: 100%;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 150px);
+        gap: 1rem;
+    }
+
+    .centered-text{
+        font-size: 1.5rem;
+    }
+
+    .categoria1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-position: center;
+    }
+
+    .categoria2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+
+    .categoria3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .categoria4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .categoria5{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .categoria6{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .categoria7{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    .categoria8{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+    .categoria9{
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+
+    .categoria10{
+        grid-column: 1/3;
+        grid-row: 5/7;
+    }
+
+    .containerTarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorProduct {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        margin-top: 50px;
+        width: 80%;
+        min-height: 240px;
+    }
+
+    .botonIzquierda {
+        margin-left: 0;
+    }
+
+    .nombre {
+        width: 95%;
+    }
+
+    .informacion {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .btn-mi-color {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .listaCarrito {
+        width: 98%;
+    }
+
+    .btn-mi-color {
+        width: 70%;
+        margin-block: 10px;
+    }
+
+    .formDatos {
+        width: 90%;
+    }
+
+    .wsp {
+        width: 60px;
+    }
+
+    .centradorIzquierda {
+        display: none;
+    }
+
+    .labelDescuento {
+        text-align: center;
+    }
+
+    .mainCarrito {
+        padding: 1rem;
+    }
+}

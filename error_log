@@ -1,0 +1,2 @@
+[30-Jun-2023 15:42:34 UTC] PHP Warning:  hash_file(composer-setup.php): Failed to open stream: No such file or directory in Command line code on line 1
+[30-Jun-2023 15:42:34 UTC] PHP Warning:  unlink(composer-setup.php): No such file or directory in Command line code on line 1

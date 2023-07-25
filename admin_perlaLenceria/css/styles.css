@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;400;700&display=swap');
+* {
+    font-family: 'Ysabeau';
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10000;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    left: 0;
+  }
+  
+  .menu-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul li a {
+    color: #000;
+  }
+
+  .menuActive {
+    text-decoration: underline;
+  }
+  
+  button#toggleMenuButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  i:hover {
+    cursor: pointer;
+  }
+  
+
+.header {
+    height: 15vh;
+    background-color: #F9E2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerAdmin {
+    height: 15vh;
+    background-color: #F9E2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoPerla{
+    box-sizing: border-box;
+    max-width: 20%;
+    max-height: 100%;
+    margin-block: 3px;
+}
+
+.centradorDerecha {
+    color: #F9E2E7;
+    width: 28px;
+    margin-right: 20px;
+}
+
+.centradorIzquierda {
+    color: #F9E2E7;
+    width: 21px;
+    margin-left: 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+input{
+    display: block;
+    margin-block: 10px;
+    width: 70%;
+}
+
+.inicioSesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 20%;
+    height: 70%;
+    padding-block: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+
+.boton {
+    color: grey;
+    margin-top: 10px;
+    background-color: #F9E2E7;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    transition: 1s;
+    padding: 8px;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    transition: 1s;
+}
+
+.footer {
+    margin-top: 1rem;
+    height: 10vh;
+    background-color: #F9E2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.yo {
+    margin: 0px;
+    color: grey;
+}
+
+i {
+    margin-left: 20px;
+}
+
+.mainAdmin {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-block: 2rem;
+    width: 100%;
+}
+
+.opciones {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-mi-color {
+    background-color: #F9E2E7;
+    color: grey;
+    width: 180px;
+}
+
+.btn-mi-color:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    color: grey;
+}
+
+.btn-mi-color-select {
+    background-color: #ebc7cf;
+    color: grey;
+    width: 180px;
+}
+.btn-mi-color-select:hover {
+    background-color: #ebc7cf;
+    color: grey;
+    width: 180px;
+}
+
+.btn-mi-color-desplegar {
+    background-color: #F9E2E7;
+    color: grey;
+}
+
+.btn-mi-color-desplegar:hover {
+    cursor: pointer;
+    background-color: #ebc7cf;
+    color: grey;
+}
+
+.btn-mi-danger {
+    background-color: #df5353;
+    color: white;
+}
+
+.btn-mi-danger:hover {
+    cursor: pointer;
+    background-color: #d03d3d;
+    color: white;
+}
+
+.btn-mi-edit {
+    background-color: #ccd5f2;
+    color: grey;
+}
+
+.btn-mi-edit:hover {
+    cursor: pointer;
+    background-color: #b2bee8;
+    color: grey;
+}
+
+.agregarProducto {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.divFormularios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+
+.sectionVariaciones {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 30%;
+    justify-content: center;
+}
+
+.rarito {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.sections {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionText {
+    width: 50%;
+}
+
+.inputTextarea {
+    width: 100%;
+}
+
+.inputVariaciones {
+    width: 90%;
+}
+
+.enviar {
+    margin-block: 2rem;
+}
+
+.tabla {
+    width: 80%;
+}
+
+.fila-principal {
+    text-align: center;
+}
+
+.fila-principal-principal {
+    text-align: center;
+}
+
+.mi-tabla {
+    background-color: #ebc7cf;
+}
+
+.subtabla {
+    width: 80%;
+    margin: none;
+}
+
+.filasSubtabla {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botonesPorcentaje {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.modal-dialog {
+    max-width: 400px; /* Define el ancho máximo del modal */
+    margin: 1.75rem auto; /* Centra el modal verticalmente */
+}
+
+.modal-content {
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #F9E2E7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sectionPorcentaje{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelar {
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    color: grey;
+    margin-bottom: 1rem;
+    width: 20%
+}
+
+.opcionesMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tablaWidth {
+    width: 95%;
+}
+
+.Pendiente {
+    background-color: rgb(237, 169, 43);
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.Listo {
+    background-color: rgb(0, 183, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    width: 78.34px;
+}
+
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divInfo {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.ulInfo {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.divProductos {
+    border-bottom: grey 1px;
+}
+
+.divFlecha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.botonAtras:hover {
+    cursor: pointer;
+}
+
+.divBuscador {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador {
+    width: 70%;
+}
+
+.modal-content-mio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: 3px solid #F9E2E7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
+
+@media (max-width: 767px) {
+    .headerAdmin {
+        margin-bottom: 3rem;
+    }
+    .inicioSesion {
+        width: 80%;
+    }
+    ul {
+        margin-top: 3rem;
+        margin-right: 0;
+        justify-content: space-evenly;
+    }
+    .btn-mi-color {
+        width: 100px;
+        color: grey;
+    }
+    .btn-mi-color-select {
+        width: 100px;
+    }
+    .wrapper {
+        margin-bottom: 3rem;
+    }
+
+    .divFormularios {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .table-responsive {
+        display: block;
+        overflow-x: auto;
+      }
+      
+      .table-responsive table {
+        display: inline-block;
+      }
+      
+      .table-responsive table thead {
+        display: table-header-group;
+      }
+      
+      .table-responsive table tbody {
+        display: table-row-group;
+      }
+      
+      .table-responsive table tr {
+        display: table-row;
+      }
+      
+      .table-responsive table td,
+      .table-responsive table th {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .botonesPorcentaje {
+        width: 75%;
+      }
+
+      .sectionText {
+        width: 100%;
+      }
+
+      .inputTextarea {
+        width: 90%;
+      }
+
+      .divInfo {
+        flex-direction: column;
+      }
+
+      .divBuscador {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buscador {
+        width: 90%;
+    }
+
+}
