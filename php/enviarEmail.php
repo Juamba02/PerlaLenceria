@@ -17,8 +17,8 @@ session_start();
     $headers = array(
         "MIME-Version" => "1.0",
         "Content-Type" => "text/html;charset=UTF-8",
-        "From" => "perlalenceria@gmail.com",
-        "Reply-To" => "perlalenceria@gmail.com"
+        "From" => "juanaramberri02@gmail.com",
+        "Reply-To" => "juanaramberri02@gmail.com"
     );
 
     // Construir el contenido de los detalles de las giftcards

@@ -8,49 +8,49 @@ $data = $_GET['data'];
 $total = 0;
 $carrito = json_decode($data, true);
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('TEST-3606027160023139-063011-3b5d9606775f81ad3d81f6ab0db6eb98-470921312');
+//MercadoPago\SDK::setAccessToken('AccessToken');
 // Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-foreach($carrito as $producto) {
-    $id = $producto['id_producto'];
-    $sql = "SELECT * FROM productos WHERE id = '$id'";
-    $res = mysqli_query($connection, $sql);
-    $row = mysqli_fetch_assoc($res);
-    $cantidad = $producto['cantidad'];
-    $nombre = $row['nombre'];
-    if(isset($_SESSION['descuento'])) {
-        $descuento = $_SESSION['descuento']/$cantidad;
-        $precio = $row['precio'] - $descuento;
-    }else{
-        $precio = $row['precio'];
-    }
+// $preference = new MercadoPago\Preference();
+// foreach($carrito as $producto) {
+//     $id = $producto['id_producto'];
+//     $sql = "SELECT * FROM productos WHERE id = '$id'";
+//     $res = mysqli_query($connection, $sql);
+//     $row = mysqli_fetch_assoc($res);
+//     $cantidad = $producto['cantidad'];
+//     $nombre = $row['nombre'];
+//     if(isset($_SESSION['descuento'])) {
+//         $descuento = $_SESSION['descuento']/$cantidad;
+//         $precio = $row['precio'] - $descuento;
+//     }else{
+//         $precio = $row['precio'];
+//     }
     
-    $total += $precio * $cantidad;
+//     $total += $precio * $cantidad;
 
-    $item = new MercadoPago\Item();
-    $item->title = $nombre;
-    $item->quantity = $cantidad;
-    $item->unit_price = $precio;
-    array_push($productos_mp, $item);
-    unset($item);
-}
+//     $item = new MercadoPago\Item();
+//     $item->title = $nombre;
+//     $item->quantity = $cantidad;
+//     $item->unit_price = $precio;
+//     array_push($productos_mp, $item);
+//     unset($item);
+// }
 
-$preference->items = $productos_mp;
+// $preference->items = $productos_mp;
 
-$preference->payment_methods = array(
-    "excluded_payment_types" => array(
-      array("id" => "ticket")
-    )
-);
+// $preference->payment_methods = array(
+//     "excluded_payment_types" => array(
+//       array("id" => "ticket")
+//     )
+// );
 
-$preference->back_urls = array(
-    "success" => "https://perlalenceria.com/views/success.php",
-    "failure" => "https://perlalenceria.com/views/failure"
-);
-$preference->auto_return = "approved";
-$preference->binary_mode = true;
+// $preference->back_urls = array(
+//     "success" => "https://perlalenceria.com/views/success.php",
+//     "failure" => "https://perlalenceria.com/views/failure"
+// );
+// $preference->auto_return = "approved";
+// $preference->binary_mode = true;
 
-$preference->save();
+// $preference->save();
 // Crea un ítem en la preferencia
 
 ?>
@@ -67,18 +67,18 @@ $preference->save();
     <script defer src="../js/inputsForm.js"></script>
     <link rel="shortcut icon" href="../img/logo.png">
     <title>Datos - Perla Lencería</title>
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <script>
-        const mp = new MercadoPago('TEST-70abc31c-ff2c-4fb2-b3a7-f580e73a3e67', {
+    <!-- <script src="https://sdk.mercadopago.com/js/v2"></script> -->
+    <!-- <script>
+        const mp = new MercadoPago('', {
             locale: 'es-AR'
         });
         const bricksBuilder = mp.bricks();
         mp.bricks().create("wallet", "wallet_container", {
         initialization: {
-            preferenceId: "<?php echo $preference->id; ?>"
+            preferenceId: "<//?php echo $preference->id; ?>"
         },
         });
-    </script>
+    </script> -->
 </head>
 <body>
 
